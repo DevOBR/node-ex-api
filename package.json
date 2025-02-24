@@ -1,0 +1,29 @@
+{
+  "name": "ex-api",
+  "version": "1.0.0",
+  "description": "My sample API using express framework",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevOBR/node-ex-api.git"
+  },
+  "author": "DevOBR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevOBR/node-ex-api/issues"
+  },
+  "homepage": "https://github.com/DevOBR/node-ex-api#readme",
+  "dependencies": {
+    "express": "4.21.2"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
