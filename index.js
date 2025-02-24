@@ -11,15 +11,15 @@ app.get('/say-hello', (req, res) => {
 })
 
 app.get('/say-hello-json', (req, res) => {
-  res.send({ text: 'Hellow World' })
+  res.json({ text: 'Hellow World' })
 })
 
 app.post('/person', (req, res) => {
-  res.send(
-    `The new person is "${req.body.name}", ${
+  res.json({
+    msg: `The new person is "${req.body.name}", ${
       req.body.sex === 'M' ? 'He' : 'She'
     } is ${req.body.old} years old.`
-  )
+  })
 })
 
 app.use((req, res) => {
